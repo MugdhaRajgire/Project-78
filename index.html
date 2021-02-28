@@ -1,0 +1,29 @@
+
+<html>
+<head>
+    <title>Project 78</title>
+</head>
+
+<body>
+    <h1>My Family Book</h1>
+<img id="album" src="download.jpg" height="450" width="450">
+<br>
+<h3 id="reasons">My Family</h3>
+<br>
+<button type="button" onclick="nextslide()">Next</button>
+
+var reasontext =["Diljeet Singh", "Sarita Singh", "Rohan Singh", "Niyati Singh"];
+var images =["download (1).jpg", "mother.jpg", "bro.jpg", "baby sis.jpg"]
+
+var i = 0;
+function nextslide(){
+    if(i==4)
+    {
+        i=0
+       }
+       document.getElementById("album").src= images[i];
+  document.getElementById("reasontext").innerHTML= reasons[i];
+  i++;
+}
+</body>
+</html>
